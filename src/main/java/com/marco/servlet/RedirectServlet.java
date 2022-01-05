@@ -10,8 +10,8 @@ public class RedirectServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         /*
-        redirect重定：A找B要图片资源，B说C那才有，最后A改找C-------url的path变化了
-        转发：A找B要图片资源，B没有，B去问C要到了，最后B发给了A------url的path没变
+        redirect重定：A找B要图片资源，B说C那才有，最后A改找C-------url的path变化了  302
+        转发：A找B要图片资源，B没有，B去问C要到了，最后B发给了A------url的path没变  307
         */
         resp.setHeader("Location", "/yaya"); // 设置header
         resp.setStatus(302); // 设置状态

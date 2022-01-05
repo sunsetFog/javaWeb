@@ -31,7 +31,7 @@ public class HelloServlet extends HttpServlet {
         resp.setCharacterEncoding("utf-8");// 编码
 
         String url = context.getInitParameter("url");
-
+        // 转发
         RequestDispatcher requestDispatcher = context.getRequestDispatcher("/isReenvio");
         requestDispatcher.forward(req,resp);
 
