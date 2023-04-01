@@ -23,7 +23,7 @@
     -->
     <context-param>
         <param-name>url</param-name>
-        <param-value>jdbc.mysql://localhost:3306/db02</param-value>
+        <param-value>jdbc.mysql://localhost:3306/db_news</param-value>
     </context-param>
     <!--  注册Servlet -->
     <servlet>
